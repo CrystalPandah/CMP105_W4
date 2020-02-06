@@ -3,8 +3,12 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Player.h"
 #include <string.h>
 #include <iostream>
+#include <SFML/System/Vector2.hpp>
+
+
 
 
 class Level{
@@ -26,7 +30,9 @@ private:
 	Input* input;
 
 	// Level objects
-	GameObject testSprite;
+	//GameObject testSprite;
 	sf::Texture texture;
+	Player player;
+	/*sf::Vector2<float>	speed;*/
 
 };
