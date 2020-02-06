@@ -13,13 +13,19 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	player.setPosition(100, 100);
 	player.setInput(input);
 
-	enemytexture.loadFromFile("gfx/goomba.png");
+	enemyTexture.loadFromFile("gfx/goomba.png");
 
 	enemy.setTexture(&enemyTexture);
 	enemy.setSize(sf::Vector2f(100, 100));
-	enemy.setPosition(100, 100);
+	enemy.setPosition(300, 100);
 	enemy.setWindow(window);
 	
+	enemy.setSize().x;
+	enemy.setSize().y;
+
+	enemy.setSize(100).x;
+
+
 	
 	/*speed.x = 150.0f;
 	speed.y = 150.0f;*/

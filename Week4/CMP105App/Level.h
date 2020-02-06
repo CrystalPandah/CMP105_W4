@@ -37,6 +37,8 @@ private:
 	sf::Texture enemyTexture;
 	Player player;
 	Enemy enemy;
+	//sf::Vector2<float>	size;
+	//float enemy.setSize().x;
+	//sf::Vector2<float>  enemy.setSize().y;
 	/*sf::Vector2<float>	speed;*/
-
 };

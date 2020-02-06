@@ -1,6 +1,6 @@
 #include "Enemy.h"
 #include <SFML/System/Vector2.hpp>
-//#include "Level.h"
+#include "Level.h"
 
 
 Enemy::Enemy()
@@ -81,7 +81,7 @@ void Enemy::update(float dt)
 	//}
 
 
-	//move(velocity * dt);
+
 
 
 }
