@@ -12,6 +12,15 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	player.setSize(sf::Vector2f(100, 100));
 	player.setPosition(100, 100);
 	player.setInput(input);
+
+	enemytexture.loadFromFile("gfx/goomba.png");
+
+	enemy.setTexture(&enemyTexture);
+	enemy.setSize(sf::Vector2f(100, 100));
+	enemy.setPosition(100, 100);
+	enemy.setWindow(window);
+	
+	
 	/*speed.x = 150.0f;
 	speed.y = 150.0f;*/
 
@@ -31,6 +40,7 @@ void Level::handleInput(float dt)
 		window->close();
 	}
 	player.handleInput(dt);
+	//enemy.handleInput(dt);
 
 }
 
@@ -38,6 +48,7 @@ void Level::handleInput(float dt)
 void Level::update(float dt)
 {
 	player.update(dt);
+	//enemy.update(dt);
 	
 }
 
@@ -47,6 +58,7 @@ void Level::render()
 	beginDraw();
 
 	window->draw(player);
+	window->draw(enemy);
 
 	endDraw();
 }

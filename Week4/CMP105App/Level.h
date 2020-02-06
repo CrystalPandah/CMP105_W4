@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
 #include "Player.h"
+#include "Enemy.h"
 #include <string.h>
 #include <iostream>
 #include <SFML/System/Vector2.hpp>
@@ -32,7 +33,10 @@ private:
 	// Level objects
 	//GameObject testSprite;
 	sf::Texture texture;
+	//sf::Texture enemyTexture;
+	sf::Texture enemyTexture;
 	Player player;
+	Enemy enemy;
 	/*sf::Vector2<float>	speed;*/
 
 };
