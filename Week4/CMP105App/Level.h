@@ -8,6 +8,7 @@
 #include <string.h>
 #include <iostream>
 #include <SFML/System/Vector2.hpp>
+#include "Cursor.h"
 
 
 
