@@ -11,8 +11,9 @@ Cursor::Cursor()
 
 	//speed.x = 150.0f;
 	//speed.y = 150.0f;
-
-
+	//x = 0;
+	//y = 0;
+	//setMousePosition to position of cursor 
 	//dir.x = 1;
 	//dir.y = 1;
 
@@ -36,6 +37,10 @@ void Cursor::handleInput(float dt)
 
 void Cursor::update(float dt)
 {
+	setMousPosition(x, y) == cursorPosition(x, y);
+	mousePosition (x,y) 
 	
 
 }
+
+

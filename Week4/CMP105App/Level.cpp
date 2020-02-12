@@ -5,6 +5,8 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	window = hwnd;
 	input = in;
 
+	window->setMouseCursorVisible(false);
+
 	// initialise game objects
 	texture.loadFromFile("gfx/Mushroom.png");
 
@@ -29,11 +31,11 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	enemy2.setPosition(500, 100);
 	enemy2.setWindow(window);
 
-	texture.loadFromFile("gfx/Icon.png");
+	cursorTexture.loadFromFile("gfx/Icon.png");
 
-	cursor.setTexture(&texture);
-	cursor.setSize(sf::Vector2f(100, 100));
-	cursor.setPosition(100, 100);
+	cursor.setTexture(&cursorTexture);
+	cursor.setSize(sf::Vector2f(48, 48));
+	//cursor.setPosition(100, 100);
 	cursor.setInput(input);
 
 	/*speed.x = 150.0f;
@@ -66,12 +68,15 @@ void Level::update(float dt)
 	enemy.update(dt);
 
 	enemy2.update(dt);
+
+	cursor.update(dt);
 }
 
 // Render level
 void Level::render()
 {
 	beginDraw();
+
 
 	window->draw(player);
 	window->draw(enemy);

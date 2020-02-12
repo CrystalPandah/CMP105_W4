@@ -36,6 +36,7 @@ private:
 	sf::Texture texture;
 	//sf::Texture enemyTexture;
 	sf::Texture enemyTexture;
+	sf::Texture cursorTexture;
 	Player player;
 	Enemy enemy;
 	Enemy enemy2;
