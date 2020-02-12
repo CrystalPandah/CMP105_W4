@@ -38,6 +38,7 @@ private:
 	Player player;
 	Enemy enemy;
 	Enemy enemy2;
+	Cursor cursor;
 	//sf::Vector2<float>	size;
 	//float enemy.setSize().x;
 	//sf::Vector2<float>  enemy.setSize().y;
