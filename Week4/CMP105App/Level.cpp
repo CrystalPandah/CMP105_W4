@@ -69,7 +69,7 @@ void Level::update(float dt)
 
 	enemy2.update(dt);
 
-	cursor.update(dt);
+	cursor.update(dt, input->getMouseX(), input->getMouseY());
 }
 
 // Render level
@@ -77,10 +77,11 @@ void Level::render()
 {
 	beginDraw();
 
-
+	
 	window->draw(player);
 	window->draw(enemy);
 	window->draw(enemy2);
+	window->draw(cursor);
 
 	endDraw();
 }

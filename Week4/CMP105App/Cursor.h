@@ -8,8 +8,8 @@ public:
 	~Cursor();
 
 	void handleInput(float dt);
-	void update(float dt);
-	void setMousePosition(int x, int y);
+	void update(float dt, float x, float y);
+	//void setMousePosition(int x, int y);
 	//float velocity;
 	//sf::Vector2<float>	speed;
 	//sf::Vector2<int>	dir;

@@ -35,12 +35,9 @@ void Cursor::handleInput(float dt)
 
 
 
-void Cursor::update(float dt)
+void Cursor::update(float dt, float x, float y)
 {
-	setMousPosition(x, y) == cursorPosition(x, y);
-	mousePosition (x,y) 
-	
-
+	setPosition(x, y);
 }
 
 
