@@ -8,7 +8,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	window->setMouseCursorVisible(false);
 
 	// initialise game objects
-	texture.loadFromFile("gfx/Mushroom.png");
+	texture.loadFromFile("gfx/cupcake2.png");
 
 	player.setTexture(&texture);
 	player.setSize(sf::Vector2f(100, 100));
@@ -24,7 +24,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	
 
 
-	texture.loadFromFile("gfx/Mushroom.png");
+	texture.loadFromFile("gfx/cupcake2.png");
 
 	enemy2.setTexture(&texture);
 	enemy2.setSize(sf::Vector2f(100, 100));
