@@ -30,15 +30,21 @@ Background::~Background()
 
 void Background::handleInput(float dt)
 {
-	
+	if (window)
+	{
+		sf::View view = window->getView();
+
+		// change view position
+		// view left
+		// or
+		// view right
+		view. 
+
+		window->setView(view);
+	}
 }
-
-
-
-
 
 void Background::update(float dt)
 {
 	
-
 }
