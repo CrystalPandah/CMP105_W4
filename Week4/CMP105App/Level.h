@@ -9,6 +9,7 @@
 #include <iostream>
 #include <SFML/System/Vector2.hpp>
 #include "Cursor.h"
+#include "Background.h"
 
 
 
@@ -37,10 +38,12 @@ private:
 	//sf::Texture enemyTexture;
 	sf::Texture enemyTexture;
 	sf::Texture cursorTexture;
+	sf::Texture backgroundTexture;
 	Player player;
 	Enemy enemy;
 	Enemy enemy2;
 	Cursor cursor;
+	Background background;
 	//sf::Vector2<float>	size;
 	//float enemy.setSize().x;
 	//sf::Vector2<float>  enemy.setSize().y;
