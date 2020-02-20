@@ -35,10 +35,13 @@ void Background::handleInput(float dt)
 		sf::View view = window->getView();
 
 		// change view position
+
 		// view left
+
 		// or
+
 		// view right
-		view. 
+		view.
 
 		window->setView(view);
 	}
