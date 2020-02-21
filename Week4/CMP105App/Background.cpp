@@ -32,16 +32,20 @@ void Background::handleInput(float dt)
 {
 	if (window)
 	{
-		sf::View view = window->getView();
+		
 
 		// change view position
-
+		//evey 10 frames make view go +1 to left then right
 		// view left
-
+	
 		// or
 
 		// view right
-		view.
+		//view.
+
+		sf::View view = window->getView();
+		
+		view.move(-10.0f*dt, 0.0f*dt);
 
 		window->setView(view);
 	}

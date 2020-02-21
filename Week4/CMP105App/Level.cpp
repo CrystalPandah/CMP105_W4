@@ -66,7 +66,8 @@ void Level::handleInput(float dt)
 	}
 	player.handleInput(dt);
 	//enemy.handleInput(dt);
-
+	
+	background.handleInput(dt);
 }
 
 // Update game objects
