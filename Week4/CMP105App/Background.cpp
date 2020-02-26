@@ -32,6 +32,25 @@ void Background::handleInput(float dt)
 {
 	if (window)
 	{
+		sf::View view = window->getView();
+		if (input->isKeyDown(sf::Keyboard::Right) && !input->isKeyDown(sf::Keyboard::Left))
+		{
+			//sf::View view = window->getView();
+
+			view.move(10.0f * dt, 0.0f * dt);
+
+
+			//window->setView(view);
+		}
+		if (input->isKeyDown(sf::Keyboard::Left) && !input->isKeyDown(sf::Keyboard::Right))
+		{
+			//sf::View view = window->getView();
+
+			view.move(-10.0f * dt, 0.0f * dt);
+
+			//window->setView(view);
+		}
+		window->setView(view);
 		
 
 		// change view position
@@ -43,11 +62,11 @@ void Background::handleInput(float dt)
 		// view right
 		//view.
 
-		sf::View view = window->getView();
+	/*	sf::View view = window->getView();
 		
 		view.move(-10.0f*dt, 0.0f*dt);
 
-		window->setView(view);
+		window->setView(view);*/
 	}
 }
 
