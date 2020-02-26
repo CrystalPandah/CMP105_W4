@@ -30,7 +30,7 @@ Background::~Background()
 
 void Background::handleInput(float dt)
 {
-	if (window)
+	if (window && input)
 	{
 		sf::View view = window->getView();
 		if (input->isKeyDown(sf::Keyboard::Right) && !input->isKeyDown(sf::Keyboard::Left))
@@ -72,5 +72,9 @@ void Background::handleInput(float dt)
 
 void Background::update(float dt)
 {
-	
+	if (window)
+	{
+		window->getView().;
+		getSize();
+	}
 }

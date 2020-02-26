@@ -44,6 +44,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	background.setSize(sf::Vector2f(11038, 675));
 	background.setPosition(0, 0);
 	background.setWindow(window);
+	background.setInput(input);
 
 
 
