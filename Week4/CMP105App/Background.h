@@ -14,8 +14,10 @@ public:
 private:
 	sf::RenderWindow* window;
 	//float velocity;
-	//sf::Vector2<float>	speed;
-	//sf::Vector2<int>	dir;
+	sf::Vector2<float>	speed;
+	sf::Vector2<int>	dir;
+	void checkCollisionB();
+	
 
 };
 

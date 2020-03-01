@@ -72,9 +72,48 @@ void Background::handleInput(float dt)
 
 void Background::update(float dt)
 {
+	
 	if (window)
 	{
 		window->getView();
 		getSize();
+		checkCollisionB();
+	}
+}
+
+void Background::checkCollisionB()
+{
+	if (getPosition().x + getSize().x >= (window->getSize().x))
+	{
+		// Move background so it is not past the edge
+		setPosition(window->getSize().x - getSize().x, getPosition().y);
+
+		// Reverse speed //change to velocity? used in other code
+		dir.x = -1;
+	}
+	else if (getPosition().x <= 0)
+	{
+		// Move background so it is not past the edge
+		setPosition(0, getPosition().y);
+
+		// change direction 
+		dir.x = 1;
+	}
+
+	if (getPosition().y + getSize().y >= (window->getSize().y))
+	{
+		// Move background so it is not past the edge
+		setPosition(getPosition().x, window->getSize().y - getSize().y);
+
+		// change direction
+		dir.y = -1;
+	}
+	else if (getPosition().y <= 0)
+	{
+		// Move circle so it is not past the edge
+		setPosition(getPosition().x, 0);
+
+		// change direction
+		dir.y = 1;
 	}
 }
