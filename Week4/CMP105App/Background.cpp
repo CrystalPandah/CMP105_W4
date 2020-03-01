@@ -74,7 +74,7 @@ void Background::update(float dt)
 {
 	if (window)
 	{
-		window->getView().;
+		window->getView();
 		getSize();
 	}
 }
